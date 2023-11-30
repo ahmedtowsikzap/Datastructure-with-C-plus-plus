@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//O(n);
+
 int main(){
     
   int n; // step 1
@@ -25,5 +27,5 @@ int main(){
 
 
 
-//Total  O(n) + o(n) = o(2n) = o(n) and thats it
+//Total  O(n) + o(n) = o(2n) = o(n) and thats it!!
 }
