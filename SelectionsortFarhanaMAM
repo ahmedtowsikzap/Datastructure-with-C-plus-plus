@@ -1,0 +1,28 @@
+def minvalue(data,k,n,loc):
+    minvalue=data[k]
+    loc=k
+    j=k+1
+    while(j<n):
+        if(minvalue>data[j]):
+            minvalue=data[j]
+            loc=j
+        j=j+1
+data=[]
+loc=-1
+
+n=int(input("Enter the no of elements:"))
+
+print("Enter the value in the list...")
+for i in range(0,n):
+    v=int(input())
+    data.append(v)
+print(data)
+
+for k in range(0,n):
+    minvalue(data,k,n,loc)
+    temp=data[k]
+    data[k]=data[loc] 
+    data[loc]=temp
+
+print("after sorting:")
+print(data)
